@@ -110,7 +110,7 @@ class Simple_ACF_Time_Field extends acf_Field
     } else {
       $val = ($value['hour']%12) * 60 + $value['minute'];
       if($value['meridiem'] == 'pm') {
-        $val += 12*30;
+        $val += 12 * 60;
       }
     }
     
