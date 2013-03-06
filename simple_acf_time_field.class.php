@@ -166,9 +166,9 @@ class Simple_ACF_Time_Field extends acf_Field
     $tokens = array(
       'a' => $hour < 12 ? 'am' : 'pm',
       'A' => $hour < 12 ? 'AM' : 'PM',
-      'g' => $hour%12 + 1,
+      'g' => $hour%12,
       'G' => $hour,
-      'h' => sprintf('%02d', $hour%12 + 1),
+      'h' => sprintf('%02d', $hour%12),
       'H' => sprintf('%02d', $hour),
       'i' => sprintf('%02d', $min),
     );
